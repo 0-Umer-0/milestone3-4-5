@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  background: #ffffff;
+}
+
+.resumeDiv {
+  width: 70%;
+  border: 2px solid black;
+}
+
+header {
+  width: 120;
+  height: 155px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: linear-gradient(
+    rgba(19, 165, 228, 0.564),
+    rgba(15, 188, 215, 0.568)
+  );
+  margin-bottom: 30px;
+  header {
+    width: 120px;
+    height: 155px;
+  }
+}
+
+.white {
+  color: white;
+}
+
+header img {
+  width: 160px;
+  height: 150px;
+  border-radius: 50%;
+}
+.content {
+  width: 100%;
+  display: flex;
+}
+.content aside {
+  width: 30%;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  background: #f9f9f9;
+}
+.img {
+  float: right;
+  height: 50;
+}
+
+.contact,
+.education,
+.skill,
+.language {
+  margin-bottom: 30px;
+}
+
+.education h2 {
+  border-bottom: 3px solid #00bfff;
+  margin-bottom: 20px;
+}
+.education {
+  line-height: 20px;
+}
+
+.skill ul {
+  margin-left: 18px;
+}
+
+.main-content,
+.skill h2 {
+  width: 70%;
+  padding-left: 50px;
+  background-color: white;
+}
+.experience-items {
+  margin-bottom: 58px;
+}
+.experience-items p {
+  margin-bottom: 5px;
+}
+.experience-items ul {
+  margin-left: 18px;
+  margin-top: 15px;
+}
+
+.btndiv {
+  width: 50%;
+  padding: 1%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  margin-top: 30px;
+}
+
+.btn {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: white;
+  background: #00bfff;
+  cursor: pointer;
+  &:hover {
+    background: #c30d19;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.hide {
+  display: none;
+}
+
+@media print {
+  .btndiv {
+    display: none;
+  }
+}
+
+@media (max-width: 786px) {
+  .content {
+    flex-direction: column;
+  }
+  aside,
+  .main-content {
+    width: 100%;
+  }
+}
+
+.contact h2,
+.Education h2,
+.skills h2,
+.experience h2,
+.reference h2,
+.language h2 
+{
+  border-bottom: 2px solid #0fa6fb;
+  margin-bottom: 20px;
+  padding-bottom: 3px;
+  color: #01a2ffcb;
+}
